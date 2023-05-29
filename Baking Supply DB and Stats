@@ -34,7 +34,11 @@ INSERT INTO baking_supplies VALUES (13, "parchment_paper", 6, 11, "ebay");
 INSERT INTO baking_supplies VALUES (14, "patry_brush", 31, 30, "china");
 INSERT INTO baking_supplies VALUES (15, "whisk", 15, 16, "amazon");
 INSERT INTO baking_supplies VALUES (16, "bench_cutter", 17, 5, "ebay");
+--make a column for provider
 SELECT provider FROM baking_supplies;
+--create a table using all baking supplies
 SELECT * FROM baking_supplies;
+--order the table by price of baking supplies
 SELECT * FROM baking_supplies ORDER BY price_$;
+--order by price starting with highest priced item
 SELECT * FROM baking_supplies WHERE price_$ >20 ORDER BY price_$;
