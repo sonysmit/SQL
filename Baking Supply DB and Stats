@@ -1,0 +1,40 @@
+/** Items list:
+Measuring_cups (24)
+measuring_spoons (36)
+rolling_pin (12)
+cake_pans(60)
+Mixer (16)
+bench_cutter (14)
+whisk (9)
+bowls (64)
+pastry_bag (5)
+rubber_spatula (42)
+wire_rack (16)
+microplane (13)
+fine_mesh_sieve (6)
+offset_spatula (31)
+parchment_paper (15)
+pastry_brush (17)
+**/
+CREATE TABLE baking_supplies (id NUMERIC primary key, name TEXT, quantity INTEGER, price_$ INTEGER, provider TEXT);
+
+INSERT INTO baking_supplies VALUES (1, "measuring_cups", 24, 5, "china");
+INSERT INTO baking_supplies VALUES (2, "measuring_spoon", 36, 3, "amazon");
+INSERT INTO baking_supplies VALUES (3, "rolling_pin", 12, 16, "china");
+INSERT INTO baking_supplies VALUES (4, "cake_pans", 60, 15, "ebay");
+INSERT INTO baking_supplies VALUES (5, "Mixer", 16, 120, "china");
+INSERT INTO baking_supplies VALUES (6, "Bowls", 14, 10, "amazon");
+INSERT INTO baking_supplies VALUES (7, "pastry_bag", 9, 5, "ebay");
+INSERT INTO baking_supplies VALUES (8, "rubber_spatula", 64, 12, "china");
+INSERT INTO baking_supplies VALUES (9, "wire_rack", 5, 7, "ebay");
+INSERT INTO baking_supplies VALUES (10, "microplane", 42, 15, "amazon");
+INSERT INTO baking_supplies VALUES (11, "fine_mesh_sieve", 16, 32, "china");
+INSERT INTO baking_supplies VALUES (12, "Offset_Spatula", 13, 22, "ebay");
+INSERT INTO baking_supplies VALUES (13, "parchment_paper", 6, 11, "ebay");
+INSERT INTO baking_supplies VALUES (14, "patry_brush", 31, 30, "china");
+INSERT INTO baking_supplies VALUES (15, "whisk", 15, 16, "amazon");
+INSERT INTO baking_supplies VALUES (16, "bench_cutter", 17, 5, "ebay");
+SELECT provider FROM baking_supplies;
+SELECT * FROM baking_supplies;
+SELECT * FROM baking_supplies ORDER BY price_$;
+SELECT * FROM baking_supplies WHERE price_$ >20 ORDER BY price_$;
